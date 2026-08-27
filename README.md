@@ -176,9 +176,15 @@ This indicates that the model correctly classified approximately 90 out of every
 - Visual Studio Code
 - GitHub
 
+## Conclusion
+
+This project demonstrates how data analysis and machine learning can support logistics decision-making. By analyzing delivery performance, weather conditions, distance, costs, and other operational factors, logistics organizations can identify potential problems and develop data-driven strategies to improve efficiency.
+
+The predictive model further demonstrates how machine learning can be used to identify potential delivery delays and support proactive logistics planning.
+
 ## Project Structure
 
-
+```text
 logistics-delivery-analysis/
 │
 ├── data/
@@ -191,8 +197,3 @@ logistics-delivery-analysis/
 ├── requirements.txt
 └── Strategic_Planning_Report.docx
 
-## Conclusion
-
-This project demonstrates how data analysis and machine learning can support logistics decision-making. By analyzing delivery performance, weather conditions, distance, costs, and other operational factors, logistics organizations can identify potential problems and develop data-driven strategies to improve efficiency.
-
-The predictive model further demonstrates how machine learning can be used to identify potential delivery delays and support proactive logistics planning.
