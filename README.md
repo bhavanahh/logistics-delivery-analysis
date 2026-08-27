@@ -59,6 +59,7 @@ The following KPIs were calculated:
 The project follows the following workflow:
 
 ```text
+
 Data Collection
       ↓
 Data Understanding
@@ -76,3 +77,121 @@ Predictive Modeling
 Model Evaluation
       ↓
 Strategic Recommendations
+
+# Exploratory Data Analysis
+
+The analysis examines:
+
+- Delivery status distribution
+- Delivery delays under different weather conditions
+- Delivery delays across vehicle types
+- Relationship between distance and delivery cost
+- Delivery performance indicators
+
+### Weather and Delivery Delays
+
+Weather conditions showed a noticeable relationship with delivery delays.
+
+The observed delay rates were:
+
+- **Stormy:** 41.45%
+- **Rainy:** 37.35%
+- **Foggy:** 30.32%
+- **Clear:** 17.43%
+- **Hot:** 17.12%
+- **Cold:** 16.02%
+
+Stormy weather recorded the highest delay rate.
+
+### Vehicle Type and Delivery Delays
+
+Delay rates across vehicle types were relatively similar, ranging from approximately **26.14% to 27.04%**.
+
+This suggests that vehicle type alone may not be a major factor affecting delivery delays.
+
+### Distance and Delivery Cost
+
+The correlation between distance and delivery cost was approximately **0.99**.
+
+This indicates a very strong positive relationship, meaning that longer delivery distances are strongly associated with higher delivery costs.
+
+## Predictive Modeling
+
+A Logistic Regression model was developed to predict whether a delivery would be delayed.
+
+The target variable was:
+
+```text
+delay_target
+0 = Not Delayed
+1 = Delayed
+
+Categorical variables were converted using **One-Hot Encoding**, while numerical variables were passed directly to the model.
+
+The dataset was divided into:
+
+- **80% training data**
+- **20% testing data**
+
+### Model Performance
+
+The Logistic Regression model achieved:
+
+**Accuracy: 89.56%**
+
+This indicates that the model correctly classified approximately 90 out of every 100 delivery records in the test dataset.
+
+## Key Findings
+
+1. Approximately **26.68%** of deliveries were delayed.
+2. The successful delivery rate was **73.32%**.
+3. The average delivery cost was **864.94**.
+4. The average customer rating was **3.67 out of 5**.
+5. Stormy weather had the highest delay rate.
+6. Rainy and foggy conditions also showed relatively high delay rates.
+7. Distance had a very strong positive relationship with delivery cost.
+8. Vehicle types showed relatively similar delay rates.
+9. Logistic Regression achieved **89.56% accuracy** in predicting delivery delays.
+
+## Strategic Recommendations
+
+- Prepare contingency plans for adverse weather conditions.
+- Use predictive analytics to identify deliveries at higher risk of delay.
+- Consider delivery distance when planning routes and controlling costs.
+- Improve resource allocation based on delivery conditions and requirements.
+- Monitor logistics KPIs regularly.
+- Incorporate real-time traffic and weather information in future versions.
+- Explore advanced route optimization techniques in future work.
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+- Visual Studio Code
+- GitHub
+
+## Project Structure
+
+```text
+logistics-delivery-analysis/
+│
+├── data/
+│   └── Delivery_Logistics.csv
+│
+├── notebooks/
+│   └── delivery_analysis.ipynb
+│
+├── README.md
+├── requirements.txt
+└── Strategic_Planning_Report.docx
+
+## Conclusion
+
+This project demonstrates how data analysis and machine learning can support logistics decision-making. By analyzing delivery performance, weather conditions, distance, costs, and other operational factors, logistics organizations can identify potential problems and develop data-driven strategies to improve efficiency.
+
+The predictive model further demonstrates how machine learning can be used to identify potential delivery delays and support proactive logistics planning.
