@@ -122,7 +122,7 @@ A Logistic Regression model was developed to predict whether a delivery would be
 
 The target variable was:
 
-```text
+
 delay_target
 0 = Not Delayed
 1 = Delayed
@@ -178,7 +178,7 @@ This indicates that the model correctly classified approximately 90 out of every
 
 ## Project Structure
 
-```text
+
 logistics-delivery-analysis/
 │
 ├── data/
