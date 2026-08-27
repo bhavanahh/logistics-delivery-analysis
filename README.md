@@ -58,7 +58,7 @@ The following KPIs were calculated:
 
 The project follows the following workflow:
 
-```text
+
 
 Data Collection
       ↓
@@ -78,7 +78,6 @@ Model Evaluation
       ↓
 Strategic Recommendations
 
-```text
 
 # Exploratory Data Analysis
 
